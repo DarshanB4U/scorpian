@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import VehicleDetection from "../component/VehicalDetection"; // Corrected filename
+import CameraComponent from "../component/camera";
 
 export default function App() {  // Changed function name from 'main' to 'App'
   return (
@@ -15,6 +16,7 @@ export default function App() {  // Changed function name from 'main' to 'App'
           }
         />
         <Route path="/upload" element={<VehicleDetection />} />
+        <Route path="/camera" element={<CameraComponent />} />
       </Routes>
     </Router>
   );
